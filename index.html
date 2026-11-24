@@ -104,12 +104,8 @@ body {
 <div class="max-w-5xl mx-auto px-3 sm:px-4 py-4 sm:py-10 flex flex-col gap-6 relative z-10">
 
 <!-- ================= PAGE 1: KAMRAN'S CARD ================= -->
-<div id="vcard-page-kamran" class="page glass-card rounded-3xl p-6 sm:p-8 pt-16 max-w-md mx-auto w-full flex flex-col gap-6 shadow-2xl relative reveal active">
+<div id="vcard-page-kamran" class="page glass-card rounded-3xl p-6 sm:p-8 max-w-md mx-auto w-full flex flex-col gap-6 shadow-2xl relative reveal active">
 
-<!-- Top left: Company Portfolio -->
-<button onclick="openPage('portfolio-page')" class="absolute top-4 left-4 h-9 px-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 text-[11px] sm:text-xs font-bold flex items-center gap-2 shadow-lg shadow-cyan-500/25 active:scale-95 transition-all z-10">
-<i class="fa-solid fa-briefcase"></i> Company Portfolio
-</button>
 
 <div class="flex flex-col items-center text-center gap-4">
 <div class="relative">
@@ -167,13 +163,13 @@ Founder & Managing Partner
 <i class="fa-solid fa-download text-slate-400 group-hover:text-cyan-400 transition-colors"></i>
 </button>
 
-<a href="kamran.html#ai" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-950/80 to-blue-950/80 border border-cyan-500/50 hover:border-cyan-400 text-slate-100 text-xs sm:text-sm font-semibold flex items-center justify-between group transition-all">
+<button onclick="openPage('portfolio-page')" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-950/80 to-blue-950/80 border border-cyan-500/50 hover:border-cyan-400 text-slate-100 text-xs sm:text-sm font-semibold flex items-center justify-between group transition-all">
 <div class="flex items-center gap-3">
-<div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center"><i class="fa-solid fa-robot"></i></div>
-<span class="text-left">AI Agents: Leads, Quotes, Bookings</span>
+<div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center"><i class="fa-solid fa-briefcase"></i></div>
+<span class="text-left">Company Portfolio</span>
 </div>
 <i class="fa-solid fa-chevron-right text-cyan-400 transition-colors"></i>
-</a>
+</button>
 
 <a href="mailto:kzstech000@gmail.com?subject=Inquiry&body=Phone:%20%2B968%209731%202049" class="w-full py-3 px-4 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 text-slate-200 text-xs sm:text-sm font-semibold flex items-center justify-between group transition-all">
 <div class="flex items-center gap-3">
@@ -425,6 +421,13 @@ KS TECH LLC is a Muscat-based IT company. We support schools, clinics, offices a
 <p class="text-[11px] sm:text-xs text-slate-400">Built with Next.js, Supabase and AI</p>
 </div>
 
+<button type="button" onclick="document.getElementById('ai').scrollIntoView({behavior:'smooth'})" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-950/80 to-blue-950/80 border border-cyan-500/50 hover:border-cyan-400 text-slate-100 text-xs sm:text-sm font-semibold flex items-center justify-between transition-all">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center"><i class="fa-solid fa-robot"></i></div>
+<span class="text-left">AI Agents: Leads, Quotes, Bookings</span>
+</div>
+<i class="fa-solid fa-chevron-down text-cyan-400"></i>
+</button>
 <div id="bd-chips" class="flex flex-wrap gap-2 justify-center sm:justify-start"></div>
 <div id="bd-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"></div>
 
@@ -435,6 +438,122 @@ KS TECH LLC is a Muscat-based IT company. We support schools, clinics, offices a
 <a href="https://wa.me/96897312049?text=Hello%20KS%20TECH%2C%20I%20saw%20your%20work%20and%20I%20would%20like%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="js-wa w-full sm:w-auto shrink-0 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-cyan-600/30 active:scale-95 transition-all inline-flex items-center justify-center gap-2" data-msg="Hello KS TECH, I saw your work and I would like a website for my business.">
 <i class="fa-brands fa-whatsapp text-base"></i> Get a Website Like This
 </a>
+</div>
+<div class="border-t border-slate-800/80"></div>
+<div id="ai" class="flex flex-col gap-5 sm:gap-6 scroll-mt-4">
+<div class="flex flex-col gap-2 text-center sm:text-left">
+<h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase flex items-center justify-center sm:justify-start gap-2">
+<i class="fa-solid fa-robot"></i> AI Agents for Your Business
+</h2>
+<p class="text-lg sm:text-2xl font-extrabold text-white leading-snug">Stop losing customers who already asked.</p>
+<p class="text-sm sm:text-base text-slate-300">Three AI agents on one simple dashboard. Take one, two or all three.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 sm:gap-5">
+<div class="glass-card interactive-card rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300 flex flex-col gap-3 group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300 shadow-md">
+<i class="fa-solid fa-magnifying-glass-chart"></i>
+</div>
+<span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400">New customers</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-100 text-sm sm:text-base group-hover:text-cyan-400 transition-colors">Lead Generation Agent</h3>
+<p class="text-[11px] sm:text-xs text-cyan-400 font-semibold">Finds new businesses to sell to</p>
+</div>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed">We find companies in Muscat that need what you sell, using public information such as Google Maps and reviews, and write the first message for you.</p>
+<ul class="text-xs sm:text-sm text-slate-300 space-y-2">
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Fresh list of target companies every week</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> A personal first message drafted for each one</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Every reply, meeting and win tracked in your dashboard</li>
+</ul>
+<div class="mt-auto pt-1 flex flex-col gap-1.5">
+<span class="text-[10px] sm:text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Best for</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Facility management</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Training institutes</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Signage and printing</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">HVAC and pest control</span>
+</div>
+</div>
+</div>
+<div class="glass-card interactive-card rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300 flex flex-col gap-3 group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300 shadow-md">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+</div>
+<span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400">Warm enquiries</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-100 text-sm sm:text-base group-hover:text-cyan-400 transition-colors">Quote Follow-up Agent</h3>
+<p class="text-[11px] sm:text-xs text-cyan-400 font-semibold">Wins back quotes that went quiet</p>
+</div>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed">Out of every 10 people who ask you for a price, how many do you follow up? Our agent follows up all 10, and you only talk to the serious ones.</p>
+<ul class="text-xs sm:text-sm text-slate-300 space-y-2">
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Flags quotes with no reply for 3 days or more</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Drafts a polite follow-up for each one</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Separates serious buyers from window shoppers</li>
+</ul>
+<div class="mt-auto pt-1 flex flex-col gap-1.5">
+<span class="text-[10px] sm:text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Best for</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Contractors and fit-out</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Signage and CCTV</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Furniture and interiors</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Events and catering</span>
+</div>
+</div>
+</div>
+<div class="glass-card interactive-card rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300 flex flex-col gap-3 group">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300 shadow-md">
+<i class="fa-solid fa-calendar-check"></i>
+</div>
+<span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-slate-400">Ready to book</span>
+</div>
+<div>
+<h3 class="font-bold text-slate-100 text-sm sm:text-base group-hover:text-cyan-400 transition-colors">Booking Agent</h3>
+<p class="text-[11px] sm:text-xs text-cyan-400 font-semibold">Turns enquiries into appointments</p>
+</div>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed">When someone asks about an appointment or a course but does not book, the agent follows up and offers them two free time slots.</p>
+<ul class="text-xs sm:text-sm text-slate-300 space-y-2">
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Tracks everyone who asked but did not book</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Offers two available times in one message</li>
+<li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Sent from your own WhatsApp number</li>
+</ul>
+<div class="mt-auto pt-1 flex flex-col gap-1.5">
+<span class="text-[10px] sm:text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Best for</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Clinics</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Training centres</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Gyms and garages</span>
+<span class="text-[10px] sm:text-[11px] font-semibold px-2 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">Restaurants</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-4">
+<div class="rounded-xl bg-slate-900/70 border border-slate-800 p-3 sm:p-4 flex items-start gap-3">
+<i class="fa-solid fa-user-check text-cyan-400 mt-0.5"></i>
+<p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed"><span class="font-bold text-white">You approve every message.</span> Nothing is sent without your OK.</p>
+</div>
+<div class="rounded-xl bg-slate-900/70 border border-slate-800 p-3 sm:p-4 flex items-start gap-3">
+<i class="fa-solid fa-shield-halved text-cyan-400 mt-0.5"></i>
+<p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed"><span class="font-bold text-white">Your data stays yours.</span> PDPL-aligned, handed back and deleted when the contract ends.</p>
+</div>
+<div class="rounded-xl bg-slate-900/70 border border-slate-800 p-3 sm:p-4 flex items-start gap-3">
+<i class="fa-solid fa-chart-line text-cyan-400 mt-0.5"></i>
+<p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed"><span class="font-bold text-white">Live dashboard.</span> See every lead, follow-up and booking in one place.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
+<p class="text-sm sm:text-base text-slate-200 text-center sm:text-left">
+<span class="font-bold text-white">See it working in 3 minutes.</span> We will show you a live demo for your type of business.
+</p>
+<a href="https://wa.me/96897312049?text=Hello%20KS%20TECH%2C%20I%20would%20like%20a%20demo%20of%20your%20AI%20agents%20(lead%20generation%2C%20quote%20follow-up%2C%20booking)." target="_blank" rel="noopener" data-msg="Hello KS TECH, I would like a demo of your AI agents (lead generation, quote follow-up, booking)." class="js-wa w-full sm:w-auto shrink-0 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-cyan-600/30 active:scale-95 transition-all inline-flex items-center justify-center gap-2">
+<i class="fa-brands fa-whatsapp text-base"></i> Book a Free Demo
+</a>
+</div>
+<p class="text-[11px] sm:text-xs text-slate-400 text-center sm:text-left">Also available: AI customer assistant for your website, already running inside the stores above.</p>
 </div>
 </main>
 </div>
