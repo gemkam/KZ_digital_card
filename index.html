@@ -146,9 +146,9 @@ body {
 .shine::after {
   content: ""; position: absolute; top: -50%; left: -60%; width: 40%; height: 200%; z-index: 2; pointer-events: none;
   background: linear-gradient(100deg, transparent 0%, rgba(255,255,255,.0) 20%, rgba(255,255,255,.55) 50%, rgba(255,255,255,0) 80%, transparent 100%);
-  transform: rotate(18deg); animation: sweep 5s ease-in-out infinite; animation-delay: var(--shine-delay, 0s);
+  transform: rotate(18deg); animation: sweep 7s ease-in-out infinite; animation-delay: var(--shine-delay, 0s);
 }
-@keyframes sweep { 0% { left: -60%; } 22% { left: 130%; } 100% { left: 130%; } }
+@keyframes sweep { 0% { left: -60%; } 28% { left: 130%; } 100% { left: 130%; } }
 
 /* ===== Press feedback + ripple ===== */
 .tap { transition: transform .18s ease, box-shadow .3s ease, border-color .3s ease; -webkit-tap-highlight-color: transparent; }
@@ -217,16 +217,12 @@ body {
 @media (hover: hover) { .list-btn:hover { border-color: rgba(34,211,238,.5); transform: translateX(3px); } .list-btn:hover .list-arrow { transform: translateX(4px); } }
 
 /* ===== Heartbeat footer ===== */
-.heartbeat { display: inline-block; color: #64748b; animation: heartbeat 2.2s ease-in-out infinite; }
-.beat-heart { color: #f43f5e; margin: 0 2px; }
+.heartbeat { display: inline-block; color: #64748b; animation: heartbeat 4s ease-in-out infinite; }
 @keyframes heartbeat {
-  0%   { transform: scale(1);    color: #64748b; text-shadow: none; }
-  12%  { transform: scale(1.14); color: #ffffff; text-shadow: 0 0 12px rgba(255,255,255,.8), 0 0 24px rgba(34,211,238,.6); }
-  24%  { transform: scale(1);    color: #cbd5e1; text-shadow: 0 0 6px rgba(255,255,255,.3); }
-  36%  { transform: scale(1.18); color: #ffffff; text-shadow: 0 0 14px rgba(255,255,255,.9), 0 0 28px rgba(34,211,238,.7); }
-  60%  { transform: scale(1);    color: #64748b; text-shadow: none; }
-  100% { transform: scale(1);    color: #64748b; text-shadow: none; }
+  0%, 100% { transform: scale(1);    color: #64748b; text-shadow: none; }
+  50%      { transform: scale(1.12); color: #ffffff; text-shadow: 0 0 10px rgba(255,255,255,.7), 0 0 22px rgba(34,211,238,.45); }
 }
+
 
 /* ===== Sub-page buttons get the same life ===== */
 .subpage a[class*="from-cyan-600"] { position: relative; overflow: hidden; animation: gradMove 5s ease infinite; background-size: 200% 200%; }
@@ -348,7 +344,7 @@ Founder & Managing Partner
 </div>
 
 <footer class="stagger text-center pt-3 border-t border-slate-800/80 relative">
-<span class="heartbeat font-display text-[11px] sm:text-xs font-semibold tracking-wide">Powered by KS TECH LLC <i class="fa-solid fa-heart beat-heart"></i> &copy; 2026</span>
+<span class="heartbeat font-display text-[11px] sm:text-xs font-semibold tracking-wide">Powered by KS TECH LLC &copy; 2026</span>
 </footer>
 </div>
 
