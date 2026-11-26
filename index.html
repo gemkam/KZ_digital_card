@@ -593,25 +593,6 @@ KS TECH LLC is a Muscat-based IT company. We support schools, clinics, offices a
 <p class="text-[11px] sm:text-xs text-slate-400">Built with Next.js, Supabase and AI</p>
 </div>
 
-<button type="button" onclick="document.getElementById('ai').scrollIntoView({behavior:'smooth'})" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-cyan-950/80 to-blue-950/80 border border-cyan-500/50 hover:border-cyan-400 text-slate-100 text-xs sm:text-sm font-semibold flex items-center justify-between transition-all">
-<div class="flex items-center gap-3">
-<div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center"><i class="fa-solid fa-robot"></i></div>
-<span class="text-left">AI Agents: Leads, Quotes, Bookings</span>
-</div>
-<i class="fa-solid fa-chevron-down text-cyan-400"></i>
-</button>
-<div id="bd-chips" class="flex flex-wrap gap-2 justify-center sm:justify-start"></div>
-<div id="bd-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"></div>
-
-<div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
-<p class="text-sm sm:text-base text-slate-200 text-center sm:text-left">
-<span class="font-bold text-white">Want one for your business?</span> Stores, booking systems, office apps and company websites.
-</p>
-<a href="https://wa.me/96897312049?text=Hello%20KS%20TECH%2C%20I%20saw%20your%20work%20and%20I%20would%20like%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="js-wa w-full sm:w-auto shrink-0 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-cyan-600/30 active:scale-95 transition-all inline-flex items-center justify-center gap-2" data-msg="Hello KS TECH, I saw your work and I would like a website for my business.">
-<i class="fa-brands fa-whatsapp text-base"></i> Get a Website Like This
-</a>
-</div>
-<div class="border-t border-slate-800/80"></div>
 <div id="ai" class="flex flex-col gap-5 sm:gap-6 scroll-mt-4">
 <div class="flex flex-col gap-2 text-center sm:text-left">
 <h2 class="text-xs font-bold tracking-widest text-cyan-400 uppercase flex items-center justify-center sm:justify-start gap-2">
@@ -638,6 +619,7 @@ KS TECH LLC is a Muscat-based IT company. We support schools, clinics, offices a
 <li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> A personal first message drafted for each one</li>
 <li class="flex items-start gap-2"><span class="text-cyan-400 mt-0.5">▸</span> Every reply, meeting and win tracked in your dashboard</li>
 </ul>
+<a href="https://black-diamond-seven.vercel.app/design/ai-lead-agent.html" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-300 hover:text-cyan-200">View Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
 <div class="mt-auto pt-1 flex flex-col gap-1.5">
 <span class="text-[10px] sm:text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Best for</span>
 <div class="flex flex-wrap gap-1.5">
@@ -725,7 +707,19 @@ KS TECH LLC is a Muscat-based IT company. We support schools, clinics, offices a
 <i class="fa-brands fa-whatsapp text-base"></i> Book a Free Demo
 </a>
 </div>
-<p class="text-[11px] sm:text-xs text-slate-400 text-center sm:text-left">Also available: AI customer assistant for your website, already running inside the stores above.</p>
+<p class="text-[11px] sm:text-xs text-slate-400 text-center sm:text-left">Also available: AI customer assistant for your website, already running inside the stores below.</p>
+</div>
+<div class="border-t border-slate-800/80"></div>
+<div id="bd-chips" class="flex flex-wrap gap-2 justify-center sm:justify-start"></div>
+<div id="bd-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5"></div>
+
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-slate-900/70 border border-cyan-500/30">
+<p class="text-sm sm:text-base text-slate-200 text-center sm:text-left">
+<span class="font-bold text-white">Want one for your business?</span> Stores, booking systems, office apps and company websites.
+</p>
+<a href="https://wa.me/96897312049?text=Hello%20KS%20TECH%2C%20I%20saw%20your%20work%20and%20I%20would%20like%20a%20website%20for%20my%20business." target="_blank" rel="noopener" class="js-wa w-full sm:w-auto shrink-0 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold text-xs sm:text-sm shadow-lg shadow-cyan-600/30 active:scale-95 transition-all inline-flex items-center justify-center gap-2" data-msg="Hello KS TECH, I saw your work and I would like a website for my business.">
+<i class="fa-brands fa-whatsapp text-base"></i> Get a Website Like This
+</a>
 </div>
 </main>
 </div>
@@ -751,48 +745,84 @@ let activePerson = 'kamran';
 // ===== Digital Solutions catalog (same items as Black Diamond) =====
 const BD = 'https://black-diamond-seven.vercel.app/';
 const catalogs = [
-  { name: 'Aura Lumière', tag: 'Beauty & Salon', group: 'Beauty & Fashion', btn: 'Open Catalog',
-    desc: 'Facials, hair styling, blow dry and a luxury bridal studio.',
-    img: 'img/scenes/salon.svg', url: 'design/aura-lumiere.html' },
-  { name: 'Café Amara', tag: 'Coffee & Cafe', group: 'Food & Cafe', badge: 'Newest', live: true, btn: 'Open Live Store',
-    desc: 'Muscat specialty coffee lounge: menu by mood, PS5, table tennis, movie nights and live jamming. Prices in OMR.',
-    img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80', url: 'design/cafe-amara.html' },
-  { name: 'Maison Elara', tag: 'Boutique', group: 'Beauty & Fashion', btn: 'Open Catalog',
-    desc: 'Ladies boutique: embroidered formal suits, festive wear, tunics and seasonal designer pieces.',
-    img: 'img/scenes/boutique.svg', url: 'design/maison-elara.html' },
+  { name: 'Sculpted Slice', tag: 'Bakery Menu', group: 'Food & Cafe', badge: 'Newest', live: true, btn: 'Open Live Menu',
+    desc: 'Digital card and tap-to-order menu for a Muscat home baker: brownies, cupcakes, cookies and customised cakes with photos, OMR prices and one-tap WhatsApp ordering.',
+    img: 'img/sculpted-slice.jpg?v=2',
+    url: 'https://baker-mocha.vercel.app/' },
+  { name: 'Daftar ERP', tag: 'ERP System', group: 'Business Apps', badge: 'Live', live: true, btn: '1 Week Free Trial',
+    desc: 'All-in-one ERP for multi-company groups: bills and approvals, salaries, inventory, transport, documents and an AI assistant in English, Arabic and Urdu. Create an account and use it free for one week.',
+    img: 'img/daftar-dashboard.svg',
+    url: 'https://daftar-gemkam.vercel.app/?intro' },
+  { name: 'AI Lead Agent', tag: 'AI Agents', group: 'Business Apps', badge: 'Demo', btn: 'View Demo',
+    desc: 'AI-assisted lead generation for B2B companies: finds new leads, drafts outreach emails for your approval and tracks replies, meetings and wins on a secure client dashboard.',
+    img: 'img/scenes/ai-leads.svg',
+    url: 'design/ai-lead-agent.html' },
   { name: 'SuuqiFy', tag: 'E-commerce', group: 'E-commerce', badge: 'Oman', live: true, btn: 'Open Live Store',
     desc: 'Oman online store: home and kitchen, electronics, beauty care and lifestyle accessories in OMR, with Cash on Delivery nationwide.',
-    img: 'img/scenes/suuqify.svg', url: 'https://suuqify.vercel.app/' },
+    img: 'img/video/suuqify.jpg', video: 'img/video/suuqify.mp4',
+    vtext: '<b>SuuqiFy</b><span>Oman Online Store</span><small>Home · Electronics · Beauty<br>Cash on Delivery · OMR</small>',
+    url: 'https://suuqify.vercel.app/' },
+  { name: 'QnI', tag: 'Quotations and Invoices (E-invoicing)', group: 'Business Apps', badge: 'Live', live: true, btn: 'Open Live App',
+    desc: 'Quotations and invoices for Oman contractors: items with units, discount and 5% VAT, convert to advance, milestone and final invoices, payments, balances, PDF sharing on WhatsApp and Word, Excel and PDF conversions.',
+    img: 'img/scenes/qni.svg',
+    url: 'https://iq-app-pearl.vercel.app/login' },
+  { name: 'Velvet Cue Lounge', tag: 'Gaming App', group: 'Gaming', badge: 'Live', live: true, btn: 'Open Live App',
+    desc: 'Booking and management system for a Muscat snooker lounge: live table status, online booking, staff dashboard, snacks, reports and PDF backups. Demo login: demo / velvet2026.',
+    img: 'img/video/snooker-cafe.jpg', video: 'img/video/snooker-cafe.mp4',
+    vtext: '<b>Velvet Cue Lounge</b><span>Live Table Status</span><small>Snooker · Billiards<br>Table Tennis · PS5</small>',
+    url: 'https://velvet-cue-lounge.vercel.app/' },
+  { name: 'Aura Lumière', tag: 'Beauty & Salon', group: 'Beauty & Fashion', btn: 'Open Catalog',
+    desc: 'Facials, hair styling, blow dry and a luxury bridal studio.',
+    img: 'img/video/aura-lumiere.jpg', video: 'img/video/aura-lumiere.mp4',
+    vtext: '<b>Aura Lumière</b><span>Beauty · Bridal</span><small>Facials · Hair Styling<br>Makeup · Bridal Studio</small>',
+    url: 'design/aura-lumiere.html' },
+  { name: 'Café Amara', fx: 'steam', tag: 'Coffee & Cafe', group: 'Food & Cafe', badge: 'Live', live: true, btn: 'Open Live Store',
+    desc: 'Muscat specialty coffee lounge: menu by mood, PS5, table tennis, movie nights and live jamming. Prices in OMR.',
+    img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80',
+    url: 'design/cafe-amara.html' },
+  { name: 'Maison Elara', tag: 'Boutique', group: 'Beauty & Fashion', btn: 'Open Catalog',
+    desc: 'Ladies boutique: embroidered formal suits, festive wear, tunics and seasonal designer pieces.',
+    img: 'img/video/maison-elara.jpg', video: 'img/video/maison-elara.mp4', vpos: 'mid',
+    vtext: '<b>Maison Elara</b><span>Ladies Boutique</span><small>Formal Suits · Festive Wear<br>Tunics · Designer Pieces</small>',
+    url: 'design/maison-elara.html' },
   { name: 'BaZariFy', tag: 'E-commerce', group: 'E-commerce', badge: 'Featured', live: true, btn: 'Open Live Store',
     desc: 'Home, kitchen, beauty and electronics. Quality products with Cash on Delivery nationwide.',
-    img: 'img/scenes/bazarify.svg', url: 'https://basera-bazar-lac.vercel.app/' },
+    img: 'img/scenes/bazarify.svg',
+    url: 'https://basera-bazar-lac.vercel.app/' },
   { name: 'Bright Spot', tag: 'E-commerce', group: 'E-commerce', badge: 'Live', live: true, btn: 'Open Live Store',
     desc: 'General store: fashion, electronics, beauty, home and kitchen, kids and wellness, with COD and WhatsApp ordering.',
-    img: 'img/scenes/brightspot.svg', url: 'https://bright-spot.vercel.app/' },
-  { name: 'Daftar Office System', tag: 'Office System', group: 'Business Apps', badge: 'Live', live: true, btn: 'Try It Free',
-    desc: 'All-in-one office app for multi-company groups: bills and approvals, salaries, inventory, transport, documents and an AI assistant in English, Arabic and Urdu. Create a free account and try it live.',
-    img: 'img/daftar-dashboard.svg', url: 'https://daftar-gemkam.vercel.app/?intro' },
-  { name: 'The Snooker Cafe', tag: 'Gaming App', group: 'Gaming', badge: 'Live', live: true, btn: 'View Live Tables',
-    desc: 'Live table status for a Muscat snooker club: snooker, billiards, table tennis and PS5, updated in real time.',
-    img: 'img/snooker-cafe.svg', url: 'https://the-snooker-cafe.vercel.app/' },
+    img: 'img/video/bright-spot.jpg', video: 'img/video/bright-spot.mp4',
+    vtext: '<b>Bright Spot</b><span>General Store</span><small>Fashion · Electronics · Beauty<br>Home · Kids · Wellness</small>',
+    url: 'https://bright-spot.vercel.app/' },
   { name: 'PUBG Ops', tag: 'Gaming App', group: 'Gaming', badge: 'Live', live: true, btn: 'Open Live App',
     desc: 'PUBG account management app: account inventory, buyer leads and sales tracking on a dual-admin dashboard with secure login.',
-    img: 'img/scenes/pubg.svg', url: 'https://account-ops.vercel.app/login' },
+    img: 'img/scenes/pubg.svg',
+    url: 'https://account-ops.vercel.app/login' },
   { name: 'Bazaar Royale', tag: 'Marketplace', group: 'E-commerce', btn: 'Open Catalog',
     desc: 'Luxury heritage marketplace: velvet shawls, bridal formals, pottery, brass and handcrafted footwear.',
-    img: 'img/scenes/bazaar.svg', url: 'design/bazaar-royale.html' },
+    img: 'img/video/bazaar-royale.jpg', video: 'img/video/bazaar-royale.mp4', vpos: 'right',
+    vtext: '<b>Bazaar Royale</b><span>Luxury Heritage Market</span><small>Velvet Shawls · Bridal Formals<br>Pottery · Brass · Footwear</small>',
+    url: 'design/bazaar-royale.html' },
   { name: 'Libraria Bookshop', tag: 'Literature', group: 'Lifestyle', btn: 'Open Catalog',
     desc: 'Digital books, parenting guides and literary resources.',
-    img: 'img/scenes/library.svg', url: 'design/libraria-bookshop.html' },
+    img: 'img/video/libraria.jpg', video: 'img/video/libraria.mp4',
+    vtext: '<b>Libraria Bookshop</b><span>Literature</span><small>Digital Books · Parenting Guides<br>Literary Resources</small>',
+    url: 'design/libraria-bookshop.html' },
   { name: 'Prestige Motors', tag: 'Car Showroom', group: 'Car Showrooms', btn: 'Open Catalog',
     desc: 'Luxury vehicle inventory and high-performance 4x4 options.',
-    img: 'img/scenes/motors.svg', url: 'design/prestige-motors.html' },
-  { name: 'Atelier Guild', tag: 'Art & Craft', group: 'Lifestyle', btn: 'Open Catalog',
+    img: 'img/video/prestige-motors.jpg', video: 'img/video/prestige-motors.mp4',
+    vtext: '<b>Prestige Motors</b><span>Car Showroom</span><small>Luxury Vehicles<br>Performance 4x4</small>',
+    url: 'design/prestige-motors.html' },
+  { name: 'Atelier Guild', tag: 'Handicrafts', group: 'Lifestyle', btn: 'Open Catalog',
     desc: 'Hand-painted folk art, ceramics, brass and heritage furniture from master artisans.',
-    img: 'img/scenes/atelier.svg', url: 'design/atelier-guild.html' },
+    img: 'img/video/handicrafts.jpg', video: 'img/video/handicrafts.mp4',
+    vtext: '<b>Atelier Guild</b><span>Handicrafts</span><small>Folk Art · Ceramics<br>Brass · Heritage Furniture</small>',
+    url: 'design/atelier-guild.html' },
   { name: 'Super Painters', tag: 'Services', group: 'Services', btn: 'Open Catalog',
     desc: 'Professional commercial and residential painting services.',
-    img: 'img/scenes/painters.svg', url: 'design/super-painters.html' }
+    img: 'img/video/super-painters.jpg', video: 'img/video/super-painters.mp4',
+    vtext: '<b>Super Painters</b><span>Painting Services</span><small>Commercial · Residential<br>Interior · Exterior</small>',
+    url: 'design/super-painters.html' }
 ];
 const abs = u => /^https?:\/\//.test(u) ? u : BD + u;
 
